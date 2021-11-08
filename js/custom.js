@@ -25,7 +25,7 @@ $('.owl-filter-bar').on('click', '.item', function (e) {
 
 // timer
 // Set the date we're counting down to
-var days = 11;
+var days = 31;
 var date = new Date();
 var countDownDate = new Date(date.getTime() + (days * 24 * 60 * 60 * 1000));
 // Update the count down every 1 second
@@ -52,7 +52,7 @@ var x = setInterval(function () {
 
     document.getElementById("countSec").innerHTML = seconds;
 
-    // If the count down is over, write some text 
+    // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("countDay").innerHTML = "EXPIRED";
